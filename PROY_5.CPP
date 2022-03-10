@@ -29,7 +29,8 @@ void Presentacion()
 }
 
 void Intrucciones()
-{
+{char NOM_12 [4] ="   ";
+  char d='*';
 	cout << "\n\n\n\n\t\tBIENVENIDO A LA SIMULACION DEL JUEGO PAR Y NOM\n";
 	cout << "\n\t  Debe ingresar la opcion PAR o NOM";
 	cout << "\n\n\t  Se generaran dos dados, si la suma de ambos es: ";
@@ -38,11 +39,15 @@ void Intrucciones()
 	cout << "\n\n\t  Si su pronostico no coincide? la maquina gana los 5 puntos!";
 	cout << "\n\n\t  Gana el que tenga el mayor puntaje al finalizar las rondas.";
 	cout << "\n\n\t\t################### Suerte! ##################";
-	cout << "\n <!--======================= introduzca cualquiera tecla =====================  -->\n";
-    cin >> pause;
-
+	//d= cin.get();
+	cout << "\n <!--=================== introduzca cualquiera tecla =================-->\n";
+    cout << "\n <!--====["<<d<<"]=====  -->\n"<< endl;
+   
+cin.get();
 	//getc();
 }
+
+
 int random (int d )
 {
 
@@ -145,6 +150,7 @@ void Juego()
 	cout << "\n\t\t\t       Maquina: " << sumcom << " puntos!";
 	//	getc();
 	cout << "\n <!--======================= introduzca cualquiera tecla =====================  -->\n";
+
 	cin >> pause;
 }
 
@@ -163,6 +169,8 @@ void Menu()
 {
 	int op, rep;
 	rep = 1;
+	
+
 	system("clear");
 	while (rep == 1)
 	{
@@ -172,6 +180,7 @@ void Menu()
 		cout << "\n\t\t\t    3. Juego";
 		cout << "\n\t\t\t    4. Salir  \n\t\t\t    ";
 		cin >> op;
+		
 		system("clear");
 		switch (op)
 		{
