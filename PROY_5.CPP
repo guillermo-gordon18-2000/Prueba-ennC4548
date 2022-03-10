@@ -23,6 +23,7 @@ void Presentacion()
 	cout << "\n\t\t           Rosa Dutari de Samaniego\n\n ";
 	cout << "\n\t\t\t          25/06/2020";
 	cout << "\n\t\t\t         PANAMA, 2020";
+	cout << "\n <!--======================= introduzca cualquiera tecla =====================  -->\n";
 	cin >> pause;
 	//getc();
 }
@@ -37,16 +38,18 @@ void Intrucciones()
 	cout << "\n\n\t  Si su pronostico no coincide? la maquina gana los 5 puntos!";
 	cout << "\n\n\t  Gana el que tenga el mayor puntaje al finalizar las rondas.";
 	cout << "\n\n\t\t################### Suerte! ##################";
-        cin >> pause;
+	cout << "\n <!--======================= introduzca cualquiera tecla =====================  -->\n";
+    cin >> pause;
+
 	//getc();
 }
 int random (int d )
 {
 
-  int num;
+  int num=0;
   srand(time(NULL));
-   num=rand()%51;
-  
+   num=1+rand()%(101-1);
+
 
 return num;
 }
@@ -55,7 +58,7 @@ return num;
 
 void Juego()
   {
-	int  rep1, aleat1, aleat2, sumusu, sumcom, verif, opt, tir;
+	int  rep1, aleat1=0, aleat2=0, sumusu, sumcom, verif, opt, tir;
 	char nombre[10];
 	cout << "\n\n\n\n\n\n\n\n\n\n\t\t################## PAR Y NOM #################\n";
 	cout << "\n\t\tIngrese su nombre: ";
@@ -84,14 +87,21 @@ void Juego()
 			else
 			{
 				cout << "\n\t\t             OPCION NO DISPONIBLE";
+				cout << "\n <!--======================= introduzca cualquiera tecla =====================  -->\n";
 				cin >> pause;
 				//			getc();
 				system("clear");
 			}
 		}
 		cout << "\n\t\t #############################################\n";
-		aleat1 = random(6) + 1;
-		aleat2 = random(6) + 1;
+
+
+
+		srand(time(NULL));
+
+		aleat1 = 1+rand()%(101-1);
+
+		aleat2 = rand()%(101-1);
 		cout << "\n\t\t DADO1 \t\t\t\t\t DADO2";
 		cout << "\n\t\t ##### \t\t\t\t\t #####";
 		cout << "\n\t\t # "<<aleat1<< " # \t\t\t\t\t # "<<aleat2<<" #";
@@ -107,6 +117,7 @@ void Juego()
 			cout << "\n\t\t\t    5 puntos para la maquina!";
 			sumcom = sumcom + 5;
 		}
+		cout << "\n <!--======================= introduzca cualquiera tecla =====================  -->\n";
 		cin >> pause;
 		//	getc();
 		system("clear");
@@ -133,6 +144,7 @@ void Juego()
 	cout << "\n\t\t\t       "<<nombre<<": "<<sumusu<<" puntos!";
 	cout << "\n\t\t\t       Maquina: " << sumcom << " puntos!";
 	//	getc();
+	cout << "\n <!--======================= introduzca cualquiera tecla =====================  -->\n";
 	cin >> pause;
 }
 
@@ -141,6 +153,7 @@ int Salir()
 	int r;
 	cout << "\n\n\n\n\n\n\n\n\n\n\n\t\t\t       Gracias por jugar!";
 	//	getc();
+	cout << "\n <!--======================= introduzca cualquiera tecla =====================  -->\n";
 	cin >> pause;
 	r = 2;
 	return r;
