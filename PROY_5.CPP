@@ -15,10 +15,7 @@ void Presentacion()
 	cout << "\n\t\t       Carrera: Desarrollo de Software I\n\n ";
 	cout << "\n\t\t       Proyecto 5:  Desarrollo de Soft I\n\n ";
 	cout << "\n\t\t\t         Integrantes: ";
-	cout << "\n\t\t          Gabriel Casari, 20-70-5016 ";
-	cout << "\n\t\t         Adrian Jaramillo, 4-816-1471 ";
 	cout << "\n\t\t         Guillermo Gordon, 8-959-2011 ";
-	cout << "\n\t\t            Jose Suira, 8-976-1442\n\n ";
 	cout << "\n\t\t\t          Profesora: ";
 	cout << "\n\t\t           Rosa Dutari de Samaniego\n\n ";
 	cout << "\n\t\t\t          25/06/2020";
