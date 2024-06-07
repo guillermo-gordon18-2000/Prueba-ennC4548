@@ -44,7 +44,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/guillermo-gordon18-2000/infija-a-postfija">
-    <img src="https://github.com/guillermo-gordon18-2000/infija-a-postfija/assets/83618044/43269209-6bba-40e3-af42-a0baaa0acdb1" alt="Logo" width="80" height="80">
+    <img src="https://github.com/guillermo-gordon18-2000/SIMULADOR-JUEGO-AZAR/assets/83618044/d45131a0-7eb7-4414-a707-03d9ddf422f7" alt="Logo" width="80" height="80">
 </a>
 
   <h3 align="center">SIMULACION DEL JUEGO PAR Y NOM</h3>
